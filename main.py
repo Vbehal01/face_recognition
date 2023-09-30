@@ -36,3 +36,7 @@ async def recognise_face(file: UploadFile):
             identity=identity.split("/")
             ans.append(identity[len(identity)-1])
     return ans
+
+@app.get("/")
+async def root():
+    return "Hello world!!"
