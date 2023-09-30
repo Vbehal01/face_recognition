@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, HTTPException
 import os
-from constants import DESTINATION_FOLDER_PATH, DOCKER_WORKDIR_PATH
+from constants import DESTINATION_FOLDER_PATH
 from deepface import DeepFace
 
 
