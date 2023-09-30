@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is building docker image 🚀
 on:
   push:
     branches:
-      - main
+      - fin
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -15,5 +15,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build docker image and push to docker hub
         run: |
+          ls
           docker build -t vanshbehal01/face-recognition:backend .
           docker push vanshbehal01/face-recognition:backend
