@@ -1,0 +1,1 @@
+DESTINATION_FOLDER_PATH = "dataset"
